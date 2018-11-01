@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>States with AJAX Queries</title>
+</head>
+<body>
+<div class="container">
+		<header>
+			<h1>State List</h1>
+		</header>
+	<main>
+		<section class="add-state">
+                <input type="text" id="abbreviation"/>
+                <input type="text" id="stateName"/>
+                <button>Add</button>
+            </section>
+		
+		<section class="states-list">
+                <h2>Here's a list of states:</h2>
+                <ul>
+                    <li th:each="state : ${states}">
+                    <p th:text="${state.abbreviation}"></p> 
+                     <p th:text="${state.name}"></p>
+                     </li> 
+                </ul>
+            </section>
+        </main>
+	</div>
+
+<script src="./js/my-requests2.js"></script>
+</body>
+</html>
