@@ -32,8 +32,12 @@ fetch('/states')
 				container.appendChild(cityLinkElem);
 			})
 			
-			
 		})
 	})
 	
-	.catch(err => console.log(err))
+	.catch(err => console.log(err));
+
+
+
+
+

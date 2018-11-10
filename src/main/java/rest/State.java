@@ -47,7 +47,7 @@ public class State {
 		return id;
 	}
 
-	public Collection<String> getCitiesUrl() {
+	public Collection<String> generateCitiesUrl() {
 		Collection<String> urls = new ArrayList<>();
 		for (City city : cities) {
 			urls.add(format("/states/%s/cities/%s", this.getAbbreviation(), city.getName()));
